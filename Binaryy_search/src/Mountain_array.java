@@ -1,9 +1,11 @@
 public class Mountain_array {
     public static void main(String[] args) {
-
+        int []arr= {8,19,11,4,3,17,23,7};
+        int ans = peakIndexInMountainArray(arr);
+        System.out.println(ans);
     }
 
-    public int peakIndexInMountainArray(int[] arr){
+    public static int peakIndexInMountainArray(int[] arr){
 
         int start =0;
         int end = arr.length-1;
@@ -25,7 +27,7 @@ public class Mountain_array {
         //in the end, start==end and pointing to the largest number because of the two checks above.
         //start and end are always trying to find max element in the above two checks
         //hence, when they are pointing to just one element, that is the maximum one becuase that is what the checks say
-        //more elaboration: at every point of time for start and end,thay have the best possible answertill that time
+        //more elaboration: at every point of time for start and end,they have the best possible answertill that time
         //and if we are saying that only one item is remaining because of the above line, that is the best possible answer.
         return start; //or return end. here both are equal
     }

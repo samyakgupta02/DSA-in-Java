@@ -8,7 +8,7 @@ public class Main {
 
     }
 
-    // Bubble sort functin starts from here
+    // Bubble sort function starts from here
     static void Bubblesort(int[]arr){
         boolean swapped;
         for (int i=0; i < arr.length;i++){
