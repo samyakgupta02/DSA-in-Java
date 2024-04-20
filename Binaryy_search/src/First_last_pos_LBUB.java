@@ -7,8 +7,8 @@ public class First_last_pos {
         int lastpos = upperbound(nums,target,-1);//initialise ans with -1
 
         if (firstpos != -1 && lastpos != -1) {
-            System.out.println("First occurrence of " + target + " is at index: " + firstpos);
-            System.out.println("Last occurrence of " + target + " is at index: " + lastpos);
+            System.out.println(firstpos);
+            System.out.println(lastpos);
         } else {
             System.out.println("Element " + target + " not found in the array.");
         }
